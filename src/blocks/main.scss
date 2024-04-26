@@ -1,0 +1,27 @@
+@import "./specs-list";
+@import "./small-button";
+@import "./nav";
+@import "./logo-link";
+@import "./categories";
+@import "./caption";
+
+.break-line {
+  height: 1px;
+
+  background-color: $Elements;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+
+  @media (max-width: 1136px) {
+    margin: 0 10px;
+  }
+}

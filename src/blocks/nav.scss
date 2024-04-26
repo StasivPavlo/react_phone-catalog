@@ -1,0 +1,34 @@
+.nav {
+  &-list {
+    display: flex;
+
+    &__item {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      padding: 0 32px;
+
+      cursor: pointer;
+
+      color: #89939a;
+
+      &--last {
+        margin-right: auto;
+      }
+    }
+
+    &__link {
+      position: relative;
+      display: block;
+      padding: 23px 0 20px;
+
+      a:active,
+      a:visited {
+        color: inherit;
+      }
+    }
+  }
+}

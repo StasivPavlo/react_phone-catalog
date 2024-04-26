@@ -1,0 +1,8 @@
+@import "../utils/variables";
+
+.caption {
+  &__text {
+    @include BodyText;
+    color: $Secondary;
+  }
+}
