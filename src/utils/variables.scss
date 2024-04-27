@@ -1,0 +1,18 @@
+$Font-family: 'Mont', sans-serif;
+$ProductCardWidth: 272px;
+$SliderCardGap: 16px;
+$DesktopWidth: 1200px;
+$MobileWidth: 320px;
+$TabletWidth: 640px;
+$Primary: #313237;
+$Elements: #E2E6E9;
+$Secondary: #89939A;
+$White: #FFF;
+$Green: #27AE60;
+$Icons-placeholders: #B4BDC3;
+
+@mixin body-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}

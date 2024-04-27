@@ -2,8 +2,8 @@
 
 .caption {
   &__text {
-    @include BodyText;
-    
+    @include body-text;
+
     color: $Secondary;
   }
 }

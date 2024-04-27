@@ -17,7 +17,7 @@
     width: 32px;
     height: 32px;
 
-    @include BodyText;
+    @include body-text;
 
     background-color: transparent;
     border: 1px solid $Elements;
