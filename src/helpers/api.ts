@@ -1,8 +1,8 @@
 import { PreviewProduct } from './Types';
 
-const BASE_URL = 'https://mate-academy.github.io/react_phone-catalog';
+const BASE_URL = 'http://localhost:3000/api/';
 
-export const PREVIEW_PRODUCTS_URL = '/_new/products.json';
+export const PREVIEW_PRODUCTS_URL = 'products.json';
 
 export const getData = async <T>(data: string): Promise<T> => {
   const response = await fetch(`${BASE_URL}${data}`);

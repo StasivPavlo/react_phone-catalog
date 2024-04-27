@@ -16,7 +16,7 @@ export const ItemCard: FC<Props> = ({ cardRef, product }) => {
       <div className="product-card__image-container">
         <img
           className="product-card__image"
-          src={`./new/${product.image}`}
+          src={product.image}
           alt={product.name}
         />
       </div>

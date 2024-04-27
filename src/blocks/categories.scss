@@ -29,21 +29,21 @@
 
     &--phones {
       background-color: #fcdbc1;
-      background-image: url("../utils/img/category-phones.png");
+      background-image: url("../../public/img/category-phones.png");
       background-size: 400px;
       background-position: 73px 8px;
     }
 
     &--tablets {
       background-color: #8d8d92;
-      background-image: url("../utils/img/category-tablets.png");
+      background-image: url("../../public/img/category-tablets.png");
       background-position: 20px 22px;
       background-size: 546px;
     }
 
     &--accessories {
       background-color: #973d5f;
-      background-image: url("../utils/img/category-accessories.png");
+      background-image: url("../../public/img/category-accessories.png");
       background-size: 680px;
       background-position: 35px 100%;
     }
@@ -55,6 +55,7 @@
 
   &__model-count {
     @include BodyText;
+
     color: $Secondary;
   }
 }

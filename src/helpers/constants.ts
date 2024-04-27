@@ -2,15 +2,15 @@ import { CarouselImgData } from './Types';
 
 export const CAROUSEL_IMG: CarouselImgData[] = [
   {
-    src: './new/img/banner-tablets.png',
+    src: './img/banner-tablets.png',
     title: '',
   },
   {
-    src: './new/img/banner-phones.png',
+    src: './img/banner-phones.png',
     title: '',
   },
   {
-    src: './new/img/banner-accessories.png',
+    src: './img/banner-accessories.png',
     title: '',
   },
 ];
