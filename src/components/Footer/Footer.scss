@@ -1,0 +1,54 @@
+@import "./../../utils/variables";
+
+.footer {
+  background: $White;
+  box-shadow: 0 -1px 0 0 #e2e6e9;
+
+  @media (max-width: 720px) {
+    .container {
+      padding: 0 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+
+      gap: 5px;
+    }
+  }
+
+  .back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 720px) {
+      margin-bottom: 5px;
+    }
+
+    &__text {
+      color: #89939a;
+      text-align: right;
+      font-family: inherit;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-right: 16px;
+    }
+
+    &__button {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

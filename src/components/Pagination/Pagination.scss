@@ -1,0 +1,66 @@
+@import "../../utils/variables";
+
+.pagination {
+  display: flex;
+  gap: 16px;
+
+  &__page-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    @include body-text;
+
+    background-color: transparent;
+    border: 1px solid $Elements;
+
+    transition: 0.3s ease-in-out;
+    transition-property: background-color, color, border;
+
+    &.selected {
+      border: 0;
+      color: $White;
+      background-color: $Primary;
+    }
+
+    &--next,
+    &--prev {
+      border-color: $Icons-placeholders;
+    }
+
+    &:hover {
+      border-color: $Primary;
+    }
+
+    &:disabled {
+      border-color: $Elements;
+
+      svg {
+        fill: $Icons-placeholders;
+      }
+
+      &:hover {
+        border-color: $Elements;
+      }
+    }
+
+    &-icon {
+      height: 16px;
+      width: 16px;
+
+      fill: $Primary;
+
+      &.next {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

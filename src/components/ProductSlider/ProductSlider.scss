@@ -1,0 +1,69 @@
+@use "../../utils/variables.scss" as *;
+
+.product-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 24px;
+  }
+
+  &__control-buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  &__button-icon {
+    fill: inherit;
+
+    &.left {
+      transform: rotate(-90deg);
+    }
+
+    &.right {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__slider {
+    display: flex;
+    width: (($ProductCardWidth + $SliderCardGap) * 4) - $SliderCardGap;
+
+    @media (max-width: $DesktopWidth) {
+      width: (($ProductCardWidth + $SliderCardGap) * 3) - $SliderCardGap;
+    }
+
+    @media (max-width: $TabletWidth) {
+      width: (($ProductCardWidth + $SliderCardGap) * 2) - $SliderCardGap;
+    }
+
+    @media (max-width: $MobileWidth) {
+      width: (($ProductCardWidth + $SliderCardGap) * 1) - $SliderCardGap;
+    }
+
+    overflow: hidden;
+
+    .wrap {
+      display: flex;
+      gap: $SliderCardGap;
+
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}

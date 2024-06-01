@@ -1,0 +1,23 @@
+.specs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    color: $Secondary;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__value {
+    color: $Primary;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,63 @@
+@import "./../../utils/variables";
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  width: 272px;
+  padding: 24px;
+
+  border: 1px solid $Elements;
+
+  transition: border-color 0.3s ease-in-out;
+
+  &:hover {
+    border-color: $Primary;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+
+    width: 208px;
+    height: 208px;
+
+    margin: 0 auto 20px;
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 21px;
+
+    min-height: 42px;
+
+    margin-bottom: 7px;
+  }
+
+  &__price {
+    margin-bottom: 8px;
+  }
+
+  &__current-price {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 140%;
+
+    margin-right: 8px;
+  }
+
+  &__full-price {
+    color: $Secondary;
+    font-size: 22px;
+    text-decoration-line: line-through;
+  }
+
+  &__brief-description {
+    margin: 16px 0;
+  }
+}
